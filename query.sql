@@ -5,7 +5,7 @@ GROUP BY genres.name_genre
 order by amount_genre;
 
 
-/*Кількість аніме відносно кількості сезонів*/
+/*Кількість оцінок в кожній ступені рангової системи оцінювання*/
 SELECT ROUND(rating) as rating, COUNT(*) as amount_rating FROM anime
 GROUP BY ROUND(rating)
 ORDER BY amount_rating;
