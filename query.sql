@@ -11,7 +11,7 @@ GROUP BY ROUND(rating)
 ORDER BY amount_rating;
 
 
-/*Рейтинг до мемберів */
+/*Середній рейтинг за кількостю мемберів */
 Select Round(members,-4) as members,Round(AVG(rating),2) from anime
 group by Round(members,-4)
 order by members
